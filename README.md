@@ -53,7 +53,7 @@ shapiro_tree_aligner.align_trees(source_tree, tree_target, alignment_rules)
 
 ## GUI / Command line
 
-You can download the RNAfbinv wrapper from [RNAfbinv2.0 git repository](https://github.com/matandro/RNAsfbinv/)<br/>
+You can download the RNAfbinv wrapper from main [RNAfbinv2.0 git repository](https://github.com/matandro/RNAsfbinv/). Here, I have attached the clone version of the RNAfbinv 2.0 for better explanation of this method to this pipeline context.<br/>
 The main folder includes python code to run the GUI / command line and a configuration file:
 * RNAfbinv.py - A GUI wrapper for RNAfbinv2.0
 * RNAfbinvCL.py - A command line wrapper for RNAfbinv2.0
