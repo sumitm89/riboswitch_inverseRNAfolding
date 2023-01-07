@@ -3,7 +3,7 @@ Our computational method for searching distant homologs of bacterial riboswitche
 
 ![Figure 1-pipeline](https://user-images.githubusercontent.com/26137763/210639624-bea590b6-2b6a-4388-8a0c-69616f45fc6f.png)
 
-# 1: Mutations and design of RNA with similar structure of target riboswitches using RNAfbinv 2.0
+# 1. Mutations and design of RNA with similar structure of target riboswitches using RNAfbinv 2.0
 
 RNAfbinv is a fragment based RNA design tool. It uses a simulated annealing process to optimize a 2D RNA structure.<br/>
 The similarity is based on fragment based design. A tree alignment is done based on nodes (structural motifs).<br/>
