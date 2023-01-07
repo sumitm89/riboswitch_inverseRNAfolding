@@ -144,13 +144,19 @@ ITERATION=<number of simulated annealing iterations>
 
 # 2. Building covariance model of detected database search
 The source code of the latest version of Infernal is available on http://eddylab.org/infernal/.
+
 User can also install using the following package manager:
+
 If you are using Debian, you can install with:
+```
 sudo apt-get install infernal infernal-doc
-
+```
 If you have conda, you can install with:
+```
 conda install -c bioconda infernal=1.1.2
-
+```
 With homebrew, you can install with
+```
 brew tap brewsci/bio
 brew install infernal
+```
