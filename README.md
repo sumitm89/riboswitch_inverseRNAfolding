@@ -1,7 +1,9 @@
 # A computational approach for the identification of distant homologs of bacterial riboswitches based on inverse RNA folding
+Our computational method for searching distant homologs of bacterial riboswitches can be described as a pipeline that is separated into the following steps: (I) Retrieve the representative consensus structure of the target riboswitch class, (II) Mutations and design of RNA with similar structure, (III) Seed generation and building of initial covariance model, (IV) Covariance model expansion, and (V) Database search and Phylogenomic analysis. The approach was influenced by synthetic biology, in which sequences are designed to perform specific tasks. The first two steps are responsible for designing synthetic sequences which are structurally similar to target riboswitch class, while the last three steps, building covariance model and database search and phylogenomic analysis, are important for the identification of the orthologs of the predicted structural candidates in all the relevant genomes and their evolutionary connection with target riboswitch class. 
+
 ![Figure 1-pipeline](https://user-images.githubusercontent.com/26137763/210639624-bea590b6-2b6a-4388-8a0c-69616f45fc6f.png)
 
-# Step 1: Mutations and design of RNA with similar structure of target riboswitches using RNAfbinv 2.0
+# 1: Mutations and design of RNA with similar structure of target riboswitches using RNAfbinv 2.0
 
 RNAfbinv is a fragment based RNA design tool. It uses a simulated annealing process to optimize a 2D RNA structure.<br/>
 The similarity is based on fragment based design. A tree alignment is done based on nodes (structural motifs).<br/>
@@ -10,8 +12,6 @@ Each iteration the target motif tree will be aligned to the current candidate tr
 The best alignment with the addition of other valuable features will generate a design score.<br/>
 Design score of 0 is exact fit but even higher scores can generate a good candidate.<br/><br/>
 RNAfbinv 2.0 can be easily installed as it is available on pypi (python 3 compatible). To install it simply run ```pip install rnafbinv```.
-
-## Attaching Vienna RNA
 
 [Vienna RNA package](https://www.tbi.univie.ac.at/RNA/ "Vienna RNA home") is required for RNAfbinv to work. This must be installed separately.<br/>
 Current version was tested with Vienna 2.4 and above. RNAfbinv will identify Vienna package if it's bin directory is in PATH.<br/>
@@ -145,20 +145,4 @@ STARTING_SEQUENCE=<starting sequence>
 ITERATION=<number of simulated annealing iterations>
 ```
 
-## The Tree class
 
-The tree alignment was written in an object oriented pattern (found in tree_aligner.py) . 
-The `Tree` class generates the best alignment between two trees based on
-a dynamic programming algorithm based on the classic classic Jiang-Wang-Zhang solution. The `TreeValue` class is expended to solve the fragment-based comparison of two "shapiro trees" 
-but it can solve multiple problems based on the user needs.<br/>
-To use the code one must define a `TreeValue` class the specifies the value of a single node in the tree.
-To align the trees the user must implement an `AlignmentObject` class which is a container 
-that holds four functions:<br/>
-* minmax_func - Function that receives two floating value and returns the best of the two (example: min, max)
-* delete_func - Function that receives a `TreeValue` and a boolean stating if the value is from the target of source tree and returns a score 
-representing the value of the deletion and an optional `AlignmentResult` object that includes a description of the deletion  
-* cmp_func - Function that receives two `TreeValue` objects and compares them, it returns a score and an optional `AlignmentResult` object that 
-includes the description of the comparison
-* merge_func - Function the receives two `TreeValue` objects returns a new `TreeValue` representing the merge between the two.
-<br/>
-A reference implementation can be found in the file: shapiro_tree_aligner.py
