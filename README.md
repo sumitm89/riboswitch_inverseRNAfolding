@@ -6,11 +6,6 @@ Our computational method for searching distant homologs of bacterial riboswitche
 # 1. Mutations and design of RNA with similar structure of target riboswitches using RNAfbinv 2.0
 
 RNAfbinv is a fragment based RNA design tool. It uses a simulated annealing process to optimize a 2D RNA structure.<br/>
-The similarity is based on fragment based design. A tree alignment is done based on nodes (structural motifs).<br/>
-Nodes are comparable if they are both bounded motifs (stems) or unbounded motifs (multi loop, interior loops, bulges ect...).<br/>
-Each iteration the target motif tree will be aligned to the current candidate tree.<br/>
-The best alignment with the addition of other valuable features will generate a design score.<br/>
-Design score of 0 is exact fit but even higher scores can generate a good candidate.<br/><br/>
 RNAfbinv 2.0 can be easily installed as it is available on pypi (python 3 compatible). To install it simply run ```pip install rnafbinv```.
 
 [Vienna RNA package](https://www.tbi.univie.ac.at/RNA/ "Vienna RNA home") is required for RNAfbinv to work. This must be installed separately.<br/>
