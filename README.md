@@ -3,6 +3,8 @@ Our computational method for searching distant homologs of bacterial riboswitche
 
 ![Figure 1-pipeline](https://user-images.githubusercontent.com/26137763/210639624-bea590b6-2b6a-4388-8a0c-69616f45fc6f.png)
 
+Altough each and every screening steps depicted in this pipeline are important, but, the most crucial steps are <b>(1) Mutations and design of RNA with similar structure of target riboswitches using RNAfbinv 2.0,</b> and <b>(2) Building covariance model and database search </b>. To use this pipeline we need to install the following softwares (i) RNAfbinv 2.0 (which also require Vienna RNA package), (ii) Infernal 1.1, (iii) BLAST+ software. Instead of installing BLAST+ user can also perform web-BLAST available in https://blast.ncbi.nlm.nih.gov/Blast.cgi using NCBI-RefSeq database. 
+
 # 1. Mutations and design of RNA with similar structure of target riboswitches using RNAfbinv 2.0
 
 RNAfbinv is a fragment based RNA design tool. It uses a simulated annealing process to optimize a 2D RNA structure.<br/>
@@ -140,4 +142,15 @@ STARTING_SEQUENCE=<starting sequence>
 ITERATION=<number of simulated annealing iterations>
 ```
 
+# 2. Building covariance model of detected database search
+The source code of the latest version of Infernal is available on http://eddylab.org/infernal/.
+User can also install using the following package manager:
+If you are using Debian, you can install with:
+sudo apt-get install infernal infernal-doc
 
+If you have conda, you can install with:
+conda install -c bioconda infernal=1.1.2
+
+With homebrew, you can install with
+brew tap brewsci/bio
+brew install infernal
