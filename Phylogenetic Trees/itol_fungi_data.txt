@@ -1,0 +1,244 @@
+DATASET_BINARY
+#lines starting with a hash are comments and ignored during parsing
+#select the separator which is used to delimit the data below (TAB,SPACE or COMMA).This separator must be used throught this file (except in the SEPARATOR line, which uses space).
+
+#SEPARATOR TAB
+#SEPARATOR SPACE
+SEPARATOR TAB
+
+#label is used in the legend table (can be changed later)
+DATASET_LABEL	transport
+
+#dataset color (can be changed later)
+COLOR	#ff0000
+
+LEGEND_TITLE	
+LEGEND_SHAPES	2	
+LEGEND_COLORS	#7D0026
+LEGEND_LABELS	Purine riboswitch candidate
+
+#Binary datasets can contain one or more values for each node. Each value will be represented by a symbol (defined in FIELD_SHAPES) with corresponding color and label (from FIELD_COLORS and FIELD_LABELS). Possible values (defined under DATA below) for each node are 1 (filled shapes), 0 (empty shapes) and -1 (completely ommited).
+
+#define colors for each individual field column (if not defined all symbols will use the main dataset color, defined in COLOR)
+#shapes for each field column; possible choices are
+#1: rectangle 
+#2: circle
+#3: star
+#4: right pointing triangle
+#5: left pointing triangle
+FIELD_LABELS	Purine riboswitch candidate
+FIELD_COLORS	#7D0026
+FIELD_SHAPES	2
+
+#all other optional settings can be set or changed later in the web interface (under 'Datasets' tab)
+
+#show internal values; if set, values associated to internal nodes will be displayed even if these nodes are not collapsed. It could cause overlapping in the dataset display.
+SHOW_INTERNAL	1
+
+#left margin, used to increase/decrease the spacing to the next dataset. Can be negative, causing datasets to overlap.
+MARGIN	0
+
+#symbol height factor; Default symbol height will be slightly less than the available space between leaves, but you can set a multiplication factor here to increase/decrease it (values from 0 to 1 will decrease it, values above 1 will increase it)
+HEIGHT_FACTOR	1
+
+#increase/decrease the spacing between individual levels, when there is more than one binary level defined 
+SYMBOL_SPACING	10
+
+#Internal tree nodes can be specified using IDs directly, or using the 'last common ancestor' method described in iTOL help pages
+#Actual data follows after the "DATA" keyword
+DATA
+
+#Example dataset with 4 columns (circle, left triangle, right triangle and rectangle):
+#FIELD_SHAPES,2,4,5,1
+#FIELD_LABELS,f1,f2,f3,f4
+#FIELD_COLORS,#ff0000,#00ff00,#ffff00,#0000ff
+#DATA
+#node 9606 will have a filled circle, empty left triangle, nothing in the 3rd column and an empty rectangle
+#9606,1,0,-1,0
+
+Arthrobotrys_oligospora	1
+Aspergillus_clavatus	1
+Aspergillus_fischeri	1
+Aspergillus_flavus	1
+Aspergillus_fumigatus	1
+Aspergillus_nidulans	1
+Aspergillus_niger	1
+Aspergillus_oryzae	1
+Aspergillus_terreus	1
+Aureobasidium_namibiae	1
+Aureobasidium_subglaciale	1
+Batrachochytrium_dendrobatidis	1
+Baudoinia_panamericana	1
+Beauveria_bassiana	1
+Bipolaris_maydis	1
+Bipolaris_oryzae	1
+Bipolaris_sorokiniana	1
+Bipolaris_victoriae	1
+Bipolaris_zeicola	1
+Blastomyces_dermatitidis	1
+Botrytis_cinerea	1
+Candida_albicans	1
+Candida_dubliniensis	1
+Candida_glabrata	1
+Candida_orthopsilosis	1
+Candida_tropicalis	1
+Capronia_coronata	1
+Capronia_epimyces	1
+Chaetomium_globosum	1
+Chaetomium_thermophilum	1
+Cladophialophora_bantiana	1
+Cladophialophora_carrionii	1
+Cladophialophora_psammophila	1
+Cladophialophora_yegresii	1
+Clavispora_lusitaniae	1
+Colletotrichum_fioriniae	1
+Colletotrichum_gloeosporioides	1
+Colletotrichum_graminicola	1
+Coniophora_puteana	1
+Coniosporium_apollinis	1
+Cordyceps_militaris	1
+Cyphellophora_europaea	1
+Dactylellina_haptotyla	1
+Debaryomyces_fabryi	1
+Debaryomyces_hansenii	1
+Dichomitus_squalens	1
+Encephalitozoon_cuniculi	1
+Encephalitozoon_intestinalis	1
+Encephalitozoon_romaleae	1
+Endocarpon_pusillum	1
+Eremothecium_cymbalariae	1
+Eremothecium_gossypii	1
+Eutypa_lata	1
+Exophiala_aquamarina	1
+Exophiala_dermatitidis	1
+Exophiala_mesophila	1
+Exophiala_oligosperma	1
+Exophiala_spinifera	1
+Exophiala_xenobiotica	1
+Exserohilum_turcicum	1
+Fibroporia_radiculosa	1
+Fonsecaea_multimorphosa	1
+Fonsecaea_pedrosoi	1
+Fusarium_graminearum	1
+Fusarium_pseudograminearum	1
+Fusarium_solani	1
+Gaeumannomyces_graminis	1
+Glarea_lozoyensis	1
+Gloeophyllum_trabeum	1
+Grosmannia_clavigera	1
+Histoplasma_capsulatum	1
+Kalmanozyma_brasiliensis	1
+Kazachstania_africana	1
+Kluyveromyces_lactis	1
+Komagataella_pastoris	1
+Lachancea_thermotolerans	1
+Leptosphaeria_maculans	1
+Lodderomyces_elongisporus	1
+Malassezia_globosa	1
+Marssonina_brunnea	1
+Metarhizium_acridum	1
+Metarhizium_brunneum	1
+Metarhizium_majus	1
+Metarhizium_robertsii	1
+Meyerozyma_guilliermondii	1
+Microsporum_canis	1
+Millerozyma_farinosa	1
+Mitosporidium_daphniae	1
+Mixia_osmundae	1
+Moniliophthora_roreri	1
+Nannizzia_gypsea	1
+Naumovozyma_castellii	1
+Naumovozyma_dairenensis	1
+Neofusicoccum_parvum	1
+Neurospora_crassa	1
+Neurospora_tetrasperma	1
+Nosema_ceranae	1
+Ogataea_parapolymorpha	1
+Paracoccidioides_brasiliensis	1
+Parastagonospora_nodorum	1
+Penicillium_chrysogenum	1
+Penicillium_expansum	1
+Pestalotiopsis_fici	1
+Phaeoacremonium_minimum	1
+Phanerochaete_carnosa	1
+Pneumocystis_murina	1
+Podospora_anserina	1
+Postia_placenta	1
+Pseudocercospora_fijiensis	1
+Pseudogymnoascus_destructans	1
+Pyrenophora_teres	1
+Pyrenophora_tritici-repentis	1
+Rasamsonia_emersonii	1
+Rhinocladiella_mackenziei	1
+Saccharomyces_cerevisiae	1
+Scedosporium_apiospermum	1
+Scheffersomyces_stipitis	1
+Schizophyllum_commune	1
+Schizosaccharomyces_cryophilus	1
+Schizosaccharomyces_japonicus	1
+Schizosaccharomyces_octosporus	1
+Schizosaccharomyces_pombe	1
+Sclerotinia_sclerotiorum	1
+Serpula_lacrymans	1
+Sordaria_macrospora	1
+Spathaspora_passalidarum	1
+Sphaerulina_musiva	1
+Spizellomyces_punctatus	1
+Sporothrix_schenckii	1
+Stereum_hirsutum	1
+Talaromyces_marneffei	1
+Talaromyces_stipitatus	1
+Tetrapisispora_blattae	1
+Tetrapisispora_phaffii	1
+Torulaspora_delbrueckii	1
+Trametes_versicolor	1
+Trichoderma_atroviride	1
+Trichoderma_reesei	1
+Trichoderma_virens	1
+Trichophyton_benhamiae	1
+Trichophyton_verrucosum	1
+Uncinocarpus_reesii	1
+Ustilago_maydis	1
+Vanderwaltozyma_polyspora	1
+Vavraia_culicis	1
+Verruconis_gallopava	1
+Verticillium_albo-atrum	1
+Verticillium_dahliae	1
+Wickerhamomyces_ciferrii	1
+Yamadazyma_tenuis	1
+Yarrowia_lipolytica	1
+Zygosaccharomyces_rouxii	1
+Zymoseptoria_tritici	1
+Pyricularia_grisea	1
+Agaricus_bisporus	-1
+Anthracocystis_flocculosa	-1
+Auricularia_subglabra	-1
+Cladophialophora_immunda	-1
+Coccidioides_immitis	-1
+Coccidioides_posadasii	-1
+Coprinopsis_cinerea	-1
+Cryptococcus_gattii_VGI	-1
+Encephalitozoon_hellem	-1
+Enterocytozoon_bieneusi	-1
+Fomitiporia_mediterranea	-1
+Heterobasidion_irregulare	-1
+Laccaria_bicolor	-1
+Melampsora_larici-populina	-1
+Moesziomyces_antarcticus	-1
+Nematocida_parisii	-1
+Ordospora_colligata	-1
+Paracoccidioides_lutzii	-1
+Pseudozyma_hubeiensis	-1
+Puccinia_graminis	-1
+Punctularia_strigosozonata	-1
+Rhodotorula_toruloides	-1
+Thermothelomyces_thermophilus	-1
+Thermothielavioides_terrestris	-1
+Tilletiaria_anomala	-1
+Tremella_mesenterica	-1
+Trichophyton_rubrum	-1
+Trichosporon_asahii	-1
+Tuber_melanosporum	-1
+Vittaforma_corneae	-1
+Wallemia_ichthyophaga	-1
+Wallemia_sebi	-1
