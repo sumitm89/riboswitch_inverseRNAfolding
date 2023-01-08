@@ -1,0 +1,459 @@
+DATASET_BINARY
+#lines starting with a hash are comments and ignored during parsing
+#select the separator which is used to delimit the data below (TAB,SPACE or COMMA).This separator must be used throught this file (except in the SEPARATOR line, which uses space).
+
+#SEPARATOR TAB
+#SEPARATOR SPACE
+SEPARATOR TAB
+
+#label is used in the legend table (can be changed later)
+DATASET_LABEL	riboswitch
+
+#dataset color (can be changed later)
+COLOR	#ff0000
+
+LEGEND_TITLE	
+LEGEND_SHAPES	2	1	
+LEGEND_COLORS	#000E7D	#7D0026
+LEGEND_LABELS	Purine_riboswitch	Transketolase_candidate
+
+#Binary datasets can contain one or more values for each node. Each value will be represented by a symbol (defined in FIELD_SHAPES) with corresponding color and label (from FIELD_COLORS and FIELD_LABELS). Possible values (defined under DATA below) for each node are 1 (filled shapes), 0 (empty shapes) and -1 (completely ommited).
+
+#define colors for each individual field column (if not defined all symbols will use the main dataset color, defined in COLOR)
+#shapes for each field column; possible choices are
+#1: rectangle 
+#2: circle
+#3: star
+#4: right pointing triangle
+#5: left pointing triangle
+FIELD_LABELS	Purine_riboswitch	Transketolase_candidate
+FIELD_COLORS	#000E7D	#7D0026
+FIELD_SHAPES	2	1
+
+#all other optional settings can be set or changed later in the web interface (under 'Datasets' tab)
+
+#show internal values; if set, values associated to internal nodes will be displayed even if these nodes are not collapsed. It could cause overlapping in the dataset display.
+SHOW_INTERNAL	1
+
+#left margin, used to increase/decrease the spacing to the next dataset. Can be negative, causing datasets to overlap.
+MARGIN	0
+
+#symbol height factor; Default symbol height will be slightly less than the available space between leaves, but you can set a multiplication factor here to increase/decrease it (values from 0 to 1 will decrease it, values above 1 will increase it)
+HEIGHT_FACTOR	1
+
+#increase/decrease the spacing between individual levels, when there is more than one binary level defined 
+SYMBOL_SPACING	10
+
+#Internal tree nodes can be specified using IDs directly, or using the 'last common ancestor' method described in iTOL help pages
+#Actual data follows after the "DATA" keyword
+DATA
+
+#Example dataset with 4 columns (circle, left triangle, right triangle and rectangle):
+#FIELD_SHAPES,2,4,5,1
+#FIELD_LABELS,f1,f2,f3,f4
+#FIELD_COLORS,#ff0000,#00ff00,#ffff00,#0000ff
+#DATA
+#node 9606 will have a filled circle, empty left triangle, nothing in the 3rd column and an empty rectangle
+#9606,1,0,-1,0
+
+Acaryochloris_marina	-1	1
+Acetoanaerobium_sticklandii	1	-1
+Acetohalobium_arabaticum	1	-1
+Acholeplasma_laidlawii	1	-1
+Acidithiobacillus_caldus	-1	1
+Acidithiobacillus_ferrivorans	-1	1
+Acidithiobacillus_ferrooxidans	-1	1
+Acinetobacter_baumannii	-1	1
+Acinetobacter_calcoaceticus	-1	1
+Acinetobacter_oleivorans	-1	1
+Agrobacterium_fabrum	-1	1
+Aliarcobacter_butzleri	-1	1
+Alicycliphilus_denitrificans	-1	1
+Alicyclobacillus_acidocaldarius	1	-1
+Aliivibrio_fischeri	-1	1
+Aliivibrio_salmonicida	-1	1
+Alkalihalobacillus_clausii	1	-1
+Alkalihalobacillus_halodurans	1	-1
+Alkalihalobacillus_pseudofirmus	1	-1
+Alkaliphilus_metalliredigens	1	-1
+Alkaliphilus_oremlandii	1	-1
+Amphibacillus_xylanus	1	-1
+Anabaena_cylindrica	-1	1
+Anabaena_sp.	-1	1
+Anaerolinea_thermophila	-1	1
+Anaplasma_centrale	-1	1
+Anaplasma_marginale	-1	1
+Anaplasma_phagocytophilum	-1	1
+Anoxybacillus_flavithermus	1	1
+Aquifex_aeolicus	-1	1
+Arcobacter_nitrofigilis	-1	1
+Arcobacter_sp.	-1	1
+Arthrobacter_sp.	-1	1
+Arthrospira_platensis	-1	1
+Azospirillum_sp.	-1	1
+Bacillus_amyloliquefaciens	1	-1
+Bacillus_anthracis	1	-1
+Bacillus_atrophaeus	1	-1
+Bacillus_cereus	1	-1
+Bacillus_cytotoxicus	1	-1
+Bacillus_infantis	1	-1
+Bacillus_licheniformis	1	-1
+Bacillus_mycoides	1	-1
+Bacillus_pumilus	1	-1
+Bacillus_subtilis	1	-1
+Bacillus_thuringiensis	1	-1
+Bacillus_toyonensis	1	-1
+Bartonella_bacilliformis	-1	1
+Bartonella_grahamii	-1	1
+Bartonella_quintana	-1	1
+Bartonella_tribocorum	-1	1
+Bartonella_vinsonii	-1	1
+Bdellovibrio_bacteriovorus	1	-1
+Bdellovibrio_exovorus	1	-1
+Beijerinckia_indica	-1	1
+Beutenbergia_cavernae	-1	1
+Bifidobacterium_dentium	-1	1
+Blastococcus_saxobsidens	-1	1
+Blautia_obeum	1	-1
+Bordetella_bronchiseptica	-1	1
+Brachyspira_hyodysenteriae	1	-1
+Brachyspira_intermedia	1	-1
+Brachyspira_murdochii	1	-1
+Brachyspira_pilosicoli	1	-1
+Bradyrhizobium_japonicum	-1	1
+Bradyrhizobium_sp.	-1	1
+Brevibacillus_brevis	1	-1
+Brevundimonas_subvibrioides	-1	1
+Brucella_anthropi	-1	1
+Buchnera_aphidicola	-1	1
+Burkholderia_glumae	-1	1
+Butyrivibrio_proteoclasticus	1	-1
+Caldilinea_aerophila	-1	1
+Calothrix_sp.	-1	1
+Candidatus_Arthromitus	1	-1
+Candidatus_Blochmannia	-1	1
+Candidatus_Kinetoplastibacterium	-1	1
+Candidatus_Pelagibacter	-1	1
+Carnobacterium_maltaromaticum	1	-1
+Carnobacterium_sp.	1	-1
+Caulobacter_sp.	-1	1
+Caulobacter_vibrioides	-1	1
+Cellulosilyticum_lentocellum	1	-1
+Cereibacter_sphaeroides	-1	1
+Chamaesiphon_minutus	-1	1
+Chelativorans_sp.	-1	1
+Chlamydia_caviae	-1	1
+Chlamydia_felis	-1	1
+Chlamydia_psittaci	-1	1
+Chloroflexus_aggregans	-1	1
+Clostridiales_genomosp._BVAB1	1	-1
+Clostridioides_difficile	1	-1
+Clostridium_acetobutylicum	1	-1
+Clostridium_autoethanogenum	1	-1
+Clostridium_beijerinckii	1	-1
+Clostridium_botulinum	1	-1
+Clostridium_cellulovorans	1	-1
+Clostridium_kluyveri	1	-1
+Clostridium_ljungdahlii	1	-1
+Clostridium_novyi	1	-1
+Clostridium_pasteurianum	1	-1
+Clostridium_perfringens	1	-1
+Clostridium_saccharobutylicum	1	-1
+Clostridium_saccharoperbutylacetonicum	1	-1
+Clostridium_sp.	1	-1
+Clostridium_tetani	1	-1
+Colwellia_psychrerythraea	1	1
+Coprococcus_catus	1	-1
+Coprococcus_sp.	1	-1
+Coprothermobacter_proteolyticus	1	-1
+Corynebacterium_efficiens	-1	1
+Corynebacterium_glutamicum	-1	1
+Corynebacterium_terpenotabidum	-1	1
+Crinalium_epipsammum	-1	1
+Cylindrospermum_stagnale	-1	1
+Dehalococcoides_mccartyi	-1	1
+Dehalococcoides_sp.	-1	1
+Desulfitobacterium_dehalogenans	1	-1
+Desulfitobacterium_dichloroeliminans	1	-1
+Desulfitobacterium_hafniense	1	-1
+Desulfosporosinus_acidiphilus	1	-1
+Desulfosporosinus_meridiei	1	-1
+Desulfosporosinus_orientis	1	-1
+Desulfotomaculum_nigrificans	1	-1
+Desulfotomaculum_reducens	1	-1
+Desulfotomaculum_ruminis	1	-1
+Desulfurivibrio_alkaliphilus	-1	1
+Dichelobacter_nodosus	-1	1
+Dictyoglomus_thermophilum	1	-1
+Dictyoglomus_turgidum	1	-1
+Ehrlichia_canis	-1	1
+Ehrlichia_chaffeensis	-1	1
+Ehrlichia_muris	-1	1
+Ehrlichia_ruminantium	-1	1
+Enterococcus_casseliflavus	1	-1
+Enterococcus_faecalis	1	-1
+Enterococcus_faecium	1	-1
+Enterococcus_hirae	1	-1
+Enterococcus_mundtii	1	-1
+Enterococcus_sp.	1	-1
+Erysipelothrix_rhusiopathiae	1	-1
+Erythrobacter_litoralis	-1	1
+Evansella_cellulosilytica	1	-1
+Exiguobacterium_antarcticum	1	-1
+Exiguobacterium_sibiricum	1	-1
+Exiguobacterium_sp.	1	-1
+Ferrimonas_balearica	1	-1
+Francisella_noatunensis	-1	1
+Francisella_philomiragia	-1	1
+Francisella_tularensis	-1	1
+Fructilactobacillus_sanfranciscensis	1	-1
+Fusobacterium_nucleatum	1	-1
+Fusobacterium_sp.	1	-1
+Gardnerella_vaginalis	-1	1
+Geitlerinema_sp._B-33	-1	1
+Geobacillus_kaustophilus	1	-1
+Geobacillus_sp.	1	-1
+Geobacillus_thermodenitrificans	1	-1
+Geobacillus_thermoleovorans	1	-1
+Gloeocapsa_alpicola	-1	1
+Gordonia_sp.	-1	1
+Gottschalkia_acidurici	1	-1
+Halanaerobium_hydrogeniformans	1	-1
+Halanaerobium_praevalens	1	-1
+Halobacillus_halophilus	1	-1
+Halobacteroides_halobius	1	-1
+Halothece_sp._MAG	-1	1
+Halothermothrix_orenii	1	-1
+Hirschia_baltica	-1	1
+Hoyosella_subflava	-1	1
+Hydrogenobacter_thermophilus	-1	1
+Hyphomicrobium_denitrificans	-1	1
+Ignavibacterium_album	-1	1
+Ilyobacter_polytropus	1	-1
+Komagataeibacter_xylinus	-1	1
+Kyrpidia_tusciae	1	-1
+Lacrimispora_saccharolytica	1	-1
+Lactiplantibacillus_plantarum	1	-1
+Lactobacillus_acidophilus	1	-1
+Lactobacillus_amylovorus	1	-1
+Lactobacillus_crispatus	1	-1
+Lactobacillus_delbrueckii	1	-1
+Lactobacillus_gasseri	1	-1
+Lactobacillus_helveticus	1	-1
+Lactobacillus_johnsonii	1	-1
+Lactobacillus_kefiranofaciens	1	-1
+Lactococcus_garvieae	1	-1
+Lactococcus_lactis	1	-1
+Lawsonia_intracellularis	-1	1
+Legionella_pneumophila	-1	1
+Leptolyngbya_sp.	-1	1
+Leuconostoc_carnosum	1	-1
+Leuconostoc_citreum	1	-1
+Leuconostoc_gelidum	1	-1
+Leuconostoc_kimchii	1	-1
+Leuconostoc_mesenteroides	1	-1
+Leuconostoc_sp.	1	-1
+Levilactobacillus_brevis	1	-1
+Liberibacter_crescens	-1	1
+Ligilactobacillus_ruminis	1	-1
+Ligilactobacillus_salivarius	1	-1
+Limosilactobacillus_fermentum	1	-1
+Limosilactobacillus_reuteri	1	-1
+Listeria_innocua	1	-1
+Listeria_ivanovii	1	-1
+Listeria_monocytogenes	1	-1
+Listeria_seeligeri	1	-1
+Listeria_welshimeri	1	-1
+Lysinibacillus_sphaericus	1	-1
+Macrococcus_caseolyticus	1	-1
+Mahella_australiensis	1	-1
+Maricaulis_maris	-1	1
+Maridesulfovibrio_hydrothermalis	-1	1
+Marinitoga_piezophila	1	-1
+Meiothermus_silvanus	-1	1
+Melissococcus_plutonius	1	-1
+Mesoplasma_florum	1	-1
+Mesorhizobium_loti	-1	1
+Mesorhizobium_opportunistum	-1	1
+Methylophaga_sp.	-1	1
+Methylotenera_mobilis	-1	1
+Methylotenera_versatilis	-1	1
+Microcoleus_sp.	-1	1
+Micromonospora_aurantiaca	-1	1
+Micromonospora_sp.	-1	1
+Mobiluncus_curtisii	-1	1
+Moorella_thermoacetica	1	-1
+Moraxella_catarrhalis	-1	1
+Mycobacterium_avium	-1	1
+Mycobacterium_sp.	-1	1
+Mycobacteroides_abscessus	-1	1
+Mycobacteroides_abscessus_subsp._massiliense	-1	1
+Mycolicibacterium_chubuense	-1	1
+Mycolicibacterium_gilvum	-1	1
+Mycolicibacterium_rhodesiae	-1	1
+Mycolicibacterium_smegmatis	-1	1
+Mycolicibacterium_vanbaalenii	-1	1
+Mycoplasma_gallisepticum	-1	1
+Mycoplasma_mycoides	-1	1
+Natranaerobius_thermophilus	1	-1
+Neorickettsia_sennetsu	-1	1
+Nitrobacter_hamburgensis	-1	1
+Nitrosomonas_sp.	-1	1
+Nitrosospira_multiformis	-1	1
+Nocardia_brasiliensis	-1	1
+Nocardia_cyriacigeorgica	-1	1
+Nocardia_farcinica	-1	1
+Nostoc_punctiforme	-1	1
+Nostoc_sp.	-1	1
+Oceanobacillus_iheyensis	1	-1
+Octadecabacter_antarcticus	-1	1
+Oenococcus_oeni	1	-1
+Oscillibacter_valericigenes	1	-1
+Paenibacillus_larvae	1	-1
+Paenibacillus_mucilaginosus	1	-1
+Paenibacillus_polymyxa	1	-1
+Paenibacillus_sp.	1	-1
+Paenibacillus_terrae	1	-1
+Parachlamydia_acanthamoebae	-1	1
+Parageobacillus_thermoglucosidasius	1	-1
+Pediococcus_claussenii	1	-1
+Pediococcus_pentosaceus	1	-1
+Pelagibacterium_halotolerans	-1	1
+Petrotoga_mobilis	1	-1
+Phenylobacterium_zucineum	-1	1
+Photobacterium_profundum	1	-1
+Pleurocapsa_sp.	-1	1
+Polynucleobacter_necessarius	-1	1
+Priestia_megaterium	1	-1
+Prochlorococcus_marinus	-1	1
+Proteus_mirabilis	-1	1
+Providencia_stuartii	-1	1
+Pseudanabaena_sp.	-1	1
+Pseudoalteromonas_sp.	-1	1
+Pseudothermotoga_elfii	1	-1
+Pseudothermotoga_hypogea	1	-1
+Pseudothermotoga_lettingae	1	-1
+Pseudothermotoga_thermarum	1	-1
+Pseudovibrio_sp.	-1	1
+Ralstonia_pickettii	-1	1
+Renibacterium_salmoninarum	-1	1
+Rhizobium_leguminosarum	-1	1
+Rhodobacter_capsulatus	-1	1
+Rhodococcus_hoagii	-1	1
+Rhodococcus_jostii	-1	1
+Rhodococcus_pyridinivorans	-1	1
+Rhodothermus_marinus	-1	1
+Roseiflexus_castenholzii	-1	1
+Roseiflexus_sp.	-1	1
+Ruminiclostridium_cellulolyticum	1	-1
+Ruminococcus_bromii	1	-1
+Sebaldella_termitidis	1	-1
+Selenomonas_ruminantium	1	-1
+Shewanella_halifaxensis	1	-1
+Shewanella_pealeana	1	-1
+Shewanella_piezotolerans	1	1
+Shewanella_sediminis	1	-1
+Shewanella_sp.	-1	1
+Shewanella_violacea	1	-1
+Shewanella_woodyi	1	-1
+Sinorhizobium_fredii	-1	1
+Sinorhizobium_meliloti	-1	1
+Solibacillus_silvestris	1	-1
+Sphaerochaeta_pleomorpha	-1	1
+Sphingobium_chlorophenolicum	-1	1
+Sphingobium_sp.	-1	1
+Sphingomonas_sp.	-1	1
+Sphingopyxis_alaskensis	-1	1
+Spiribacter_sp.	-1	1
+Spirochaeta_africana	-1	1
+Spiroplasma_apis	1	-1
+Spiroplasma_chrysopicola	1	-1
+Spiroplasma_diminutum	1	-1
+Spiroplasma_syrphidicola	1	-1
+Spiroplasma_taiwanense	1	-1
+Stackebrandtia_nassauensis	-1	1
+Stanieria_cyanosphaera	-1	1
+Staphylococcus_aureus	1	-1
+Staphylococcus_carnosus	1	-1
+Staphylococcus_epidermidis	1	1
+Staphylococcus_haemolyticus	1	-1
+Staphylococcus_lugdunensis	1	1
+Staphylococcus_pasteuri	1	-1
+Staphylococcus_pseudintermedius	1	-1
+Staphylococcus_saprophyticus	1	-1
+Staphylococcus_warneri	1	-1
+Starkeya_novella	-1	1
+Streptobacillus_moniliformis	1	-1
+Streptococcus_agalactiae	1	-1
+Streptococcus_anginosus	1	1
+Streptococcus_cristatus	1	1
+Streptococcus_dysgalactiae	1	-1
+Streptococcus_gallolyticus	1	-1
+Streptococcus_gordonii	1	-1
+Streptococcus_infantarius	1	-1
+Streptococcus_iniae	1	-1
+Streptococcus_intermedius	1	1
+Streptococcus_lutetiensis	1	-1
+Streptococcus_macedonicus	1	-1
+Streptococcus_mitis	1	-1
+Streptococcus_oralis	1	1
+Streptococcus_parasanguinis	1	-1
+Streptococcus_parauberis	1	-1
+Streptococcus_pasteurianus	1	-1
+Streptococcus_pneumoniae	1	-1
+Streptococcus_pseudopneumoniae	1	-1
+Streptococcus_pyogenes	1	-1
+Streptococcus_salivarius	1	-1
+Streptococcus_sp.	1	-1
+Streptococcus_thermophilus	1	-1
+Streptococcus_uberis	1	-1
+Streptomyces_collinus	-1	1
+Streptomyces_davaonensis	-1	1
+Streptomyces_fulvissimus	-1	1
+Streptomyces_griseus	-1	1
+Streptomyces_hygroscopicus	-1	1
+Streptomyces_scabiei	-1	1
+Streptomyces_sp.	-1	1
+Synechococcus_sp.	-1	1
+Synechocystis_sp.	-1	1
+Taylorella_asinigenitalis	-1	1
+Tetragenococcus_halophilus	1	-1
+Thermincola_potens	1	-1
+Thermoanaerobacter_brockii	1	-1
+Thermoanaerobacter_italicus	1	-1
+Thermoanaerobacter_mathranii	1	-1
+Thermoanaerobacter_pseudethanolicus	1	-1
+Thermoanaerobacter_sp.	1	-1
+Thermoanaerobacter_wiegelii	1	-1
+Thermoanaerobacterium_thermosaccharolyticum	1	-1
+Thermoanaerobacterium_xylanolyticum	1	1
+Thermobacillus_composti	1	-1
+Thermocrinis_albus	-1	1
+Thermosediminibacter_oceani	1	-1
+Thermosynechococcus_elongatus	-1	1
+Thermosynechococcus_sp._CL-1	-1	1
+Thiomonas_intermedia	-1	1
+Treponema_azotonutricium	-1	1
+Treponema_brennaborense	1	-1
+Treponema_caldarium	1	1
+Treponema_denticola	-1	1
+Treponema_pallidum	-1	1
+Treponema_paraluiscuniculi	-1	1
+Treponema_succinifaciens	-1	1
+Trichormus_variabilis	-1	1
+Tsukamurella_paurometabola	-1	1
+Vibrio_alginolyticus	1	1
+Vibrio_campbellii	1	1
+Vibrio_furnissii	1	-1
+Vibrio_harveyi	1	1
+Vibrio_parahaemolyticus	1	1
+Vibrio_sp.	1	-1
+Vibrio_splendidus	1	-1
+Vibrio_vulnificus	1	1
+Weeksella_virosa	1	-1
+Weissella_koreensis	1	-1
+Weizmannia_coagulans	1	-1
+Wolbachia_pipientis_wVitA	-1	1
+Wolbachia_sp.	-1	1
+Yersinia_pestis	-1	1
+Yersinia_pseudotuberculosis	-1	1
