@@ -163,11 +163,14 @@ brew install infernal
 
 # Usage
 <img width="434" alt="image" src="https://user-images.githubusercontent.com/26137763/211174724-ad0990ba-801d-4d0e-bcbe-1cd22b4653d7.png">
+
 Commands for building covariance model (example with building covariance model for bacterial purine riboswitches)
+
 ```
 cmbuild -F purine.cm SEED_sequence_purine.fasta
 cmcalibrate --mpi purine.cm
 ```
+
 Commands for database searching (example with searching sequence database for bacterial purine riboswitches)
 ```
 cmsearch --nohmmonly -T 30.00 -Z 742849.287494 purine.cm SEQDB.fasta > database_search_result.txt
