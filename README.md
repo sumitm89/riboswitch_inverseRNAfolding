@@ -1,9 +1,9 @@
 # A computational approach for the identification of distant homologs of bacterial riboswitches based on inverse RNA folding
-Our computational method for searching distant homologs of bacterial riboswitches can be described as a pipeline that is separated into the following steps: (I) Retrieve the representative consensus structure of the target riboswitch class, (II) Mutations and design of RNA with similar structure, (III) Seed generation and building of initial covariance model, (IV) Covariance model expansion, and (V) Database search and Phylogenomic analysis. The approach was influenced by synthetic biology, in which sequences are designed to perform specific tasks. The first two steps are responsible for designing synthetic sequences which are structurally similar to target riboswitch class, while the last three steps, building covariance model and database search and phylogenomic analysis, are important for the identification of the orthologs of the predicted structural candidates in all the relevant genomes and their evolutionary connection with target riboswitch class. 
+Our computational method for searching distant homologs of bacterial riboswitches can be described as a pipeline that is separated into the following steps: (I) Retrieve the representative consensus structure of the target riboswitch class, (II) Mutations and design of RNA with similar structure, (III) Seed generation and building of initial covariance model, (IV) Covariance model expansion, and (V) Database search and Phylogenomic analysis. The approach was influenced by synthetic biology, in which sequences are designed to perform specific tasks. The first two steps are responsible for designing synthetic sequences which are structurally similar to target riboswitch class, while the last three steps, building covariance model and database search and phylogenomic analysis, are important for the identification of the orthologs of the predicted structural candidates in all the relevant genomes and their evolutionary connection with the target riboswitch class. 
 
 ![Figure 1-pipeline-github](https://user-images.githubusercontent.com/26137763/211179763-ba36ca58-6cbe-4834-9912-9e43b55bc6e8.png)
 
-Altough each and every screening steps depicted in this pipeline are important, but, the most crucial steps are <b>(1) Mutations and design of RNA with similar structure of target riboswitches using RNAfbinv 2.0,</b> and <b>(2) Building covariance model and database search </b>. To use this pipeline we need to install the following softwares (i) RNAfbinv 2.0 (which also require Vienna RNA package), (ii) Infernal 1.1, (iii) BLAST+ software. Instead of installing BLAST+ user can also perform web-BLAST available in https://blast.ncbi.nlm.nih.gov/Blast.cgi using NCBI-RefSeq database. 
+Altough each and every screening steps depicted in this pipeline are important, but, the most crucial steps are <b>(1) Mutations and design of RNA with similar structure of target riboswitches using RNAfbinv 2.0,</b> and <b>(2) Building covariance model and database search </b>. To use this pipeline we need to install the following software (i) RNAfbinv 2.0 (which also require Vienna RNA package), (ii) Infernal 1.1, (iii) BLAST+ software. Instead of installing BLAST+ user can also perform web-BLAST available in https://blast.ncbi.nlm.nih.gov/Blast.cgi using NCBI-RefSeq database. 
 
 # 1. Mutations and design of RNA with similar structure of target riboswitches using RNAfbinv 2.0
 
@@ -11,7 +11,7 @@ RNAfbinv is a fragment based RNA design tool. It uses a simulated annealing proc
 RNAfbinv 2.0 can be easily installed as it is available on pypi (python 3 compatible). To install it simply run ```pip install rnafbinv```.
 
 [Vienna RNA package](https://www.tbi.univie.ac.at/RNA/ "Vienna RNA home") is required for RNAfbinv to work. This must be installed separately.<br/>
-Current version was tested with Vienna 2.4 and above. RNAfbinv will identify Vienna package if it's bin directory is in PATH.<br/>
+Current version was tested with Vienna 2.4 and above. RNAfbinv will identify Vienna package if its bin directory is in PATH.<br/>
 If you wish to link a specific installation of Vienna set the VIENNA_PATH environment variable to the correct bin directory.
 
 You can set Vienna location in python
@@ -60,10 +60,10 @@ The main folder includes python code to run the GUI / command line and a configu
 
 If you remove the VARNA jar or do not have java installed, images will not be generated but the design process will proceed normally.<br/><br/>
 
-To specify [vienna package](https://www.tbi.univie.ac.at/RNA/ "The ViennaRNA Package homepage") binary folder please update the 'VIENNA' parameter in config.ini (or set VIENNA_PATH environment variable)<br/>
+To specify [Vienna package](https://www.tbi.univie.ac.at/RNA/ "The ViennaRNA Package homepage") binary folder please update the 'VIENNA' parameter in config.ini (or set VIENNA_PATH environment variable)<br/>
 To specify Java binary folder please update the 'JAVA' parameter in config.ini (or set JAVA_PATH environment variable)<br/>
 To specify [VARNA](http://varna.lri.fr/ "VARNA rna homepage")'s jar file please update the 'VARNA' parameter in config.ini (or set VARNA_PATH environment variable)<br/>
-Note that if the java or vienna package binaries are in your environment variables you may leave it empty.
+Note that if the java or Vienna package binaries are in your environment variables you may leave it empty.
 
 Example to a valid config.ini file which has java installed and within the system's path:
 ```
